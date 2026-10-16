@@ -1,0 +1,62 @@
+Total users: 12000 Adopted: 1602 Rate: 0.1335
+Adoption by source:
+                    count  sum      mean
+creation_source                         
+SIGNUP_GOOGLE_AUTH   1385  232  0.167509
+GUEST_INVITE         2163  360  0.166436
+SIGNUP               2087  293  0.140393
+ORG_INVITE           4254  553  0.129995
+PERSONAL_PROJECTS    2111  164  0.077688
+opted_in_to_mailing_list
+                          count      mean
+opted_in_to_mailing_list                 
+0                          9006  0.131912
+1                          2994  0.138277
+enabled_for_marketing_drip
+                            count      mean
+enabled_for_marketing_drip                 
+0                           10208  0.132837
+1                            1792  0.137277
+invited
+         count      mean
+invited                 
+0         5583  0.123410
+1         6417  0.142278
+14-day eligible 11679 14-day adoption 235 0.0201
+14-day by source
+                    count  sum      mean
+creation_source                         
+GUEST_INVITE         2091   66  0.031564
+SIGNUP_GOOGLE_AUTH   1347   29  0.021529
+SIGNUP               2044   41  0.020059
+ORG_INVITE           4136   73  0.017650
+PERSONAL_PROJECTS    2061   26  0.012615
+Temporal holdout 2336 positive 45 ROC AUC 0.5349386488190504 PR AUC 0.027468083455396072 baseline PR 0.019263698630136987
+                                feature  coefficient
+                    cat__signup_month_6     0.574380
+      cat__creation_source_GUEST_INVITE     0.296403
+                    cat__signup_month_3     0.235040
+                    cat__signup_month_1     0.207760
+cat__creation_source_SIGNUP_GOOGLE_AUTH     0.207442
+                    cat__signup_month_9     0.192211
+                  cat__signup_weekday_2     0.159214
+                           num__invited     0.135070
+        num__enabled_for_marketing_drip     0.087415
+                   cat__signup_month_10     0.070538
+          num__opted_in_to_mailing_list     0.054995
+                  cat__signup_weekday_3     0.051838
+            cat__creation_source_SIGNUP     0.029999
+                    cat__signup_month_8    -0.014252
+                  cat__signup_weekday_5    -0.015676
+                  cat__signup_weekday_6    -0.018859
+                  cat__signup_weekday_1    -0.029988
+                   cat__signup_month_12    -0.042066
+                  cat__signup_weekday_4    -0.083310
+                  cat__signup_weekday_0    -0.093993
+                    cat__signup_month_7    -0.147558
+                    cat__signup_month_2    -0.152048
+        cat__creation_source_ORG_INVITE    -0.245405
+                    cat__signup_month_5    -0.258604
+ cat__creation_source_PERSONAL_PROJECTS    -0.319212
+                   cat__signup_month_11    -0.326773
+                    cat__signup_month_4    -0.369402
